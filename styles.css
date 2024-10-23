@@ -1,0 +1,197 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-one: #242333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*:not(i) {
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: #01b0d3;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background-one);
+  height: 40px;
+  font-size: 1.4rem;
+}
+
+#welcome-section {
+  background-color: var(--background-one);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#welcome-section p {
+  color: #01b0d3;
+}
+
+#projects h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 4rem 0 1.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cards a {
+  color: #fff;
+  text-align: center;
+  background-color: var(--background-one);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin: 0 1rem;
+  border: 1px solid var(--background-one);
+}
+
+.cards a p {
+  padding: 1rem;
+}
+
+.cards a:hover,
+button:hover {
+  color: #01b0d3;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  display: block;
+  margin: 1.6rem auto 0 auto;
+  padding: 0.9rem;
+  background-color: var(--background-one);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+button span {
+  margin-left: 0.8rem;
+}
+
+#projects {
+  margin-bottom: 4rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--background-one);
+  color: #fff;
+  padding-bottom: 4rem;
+}
+
+#contact h1 {
+  margin: 4rem 0 4rem 0;
+  font-size: 2rem;
+}
+
+#contact a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#contact a:hover {
+  color: #01b0d3;
+}
+
+.social p {
+  margin-top: -6px;
+}
+
+@media (min-width: 768px) {
+  #navbar ul {
+    justify-content: flex-end;
+    gap: 3rem;
+    padding-right: 1rem;
+  }
+
+  #welcome-section {
+    font-size: 3rem;
+  }
+
+  #projects h1 {
+    font-size: 3rem;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projects .cards a {
+    width: 300px;
+  }
+
+  #contact h1 {
+    font-size: 3rem;
+  }
+
+  .project-tile p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    margin-top: 4.5rem;
+  }
+}
