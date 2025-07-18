@@ -35,7 +35,12 @@ div {
   list-style-type: none;
   justify-content: center;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 0.7rem;
+  background-color: var(--white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-links {
@@ -48,7 +53,12 @@ div {
   background-color: var(--darker-white-color);
 }
 
+main {
+  margin-top: 4rem;
+}
+
 .btn {
+  cursor: pointer;
   border: none;
   background-color: var(--black-color);
   color: var(--white-color);
@@ -59,6 +69,46 @@ div {
 .btn-link {
   text-decoration: none;
   color: var(--white-color);
+}
+
+.btn:hover {
+  opacity: 85%;
+}
+
+.project-card {
+  max-width: 25rem;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.tech-used {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tech-marker {
+  display: inline-block;
+  margin-right: 0.2rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #66ff00;
+}
+
+.tech-item {
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.project-desc {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Dark Theme */
@@ -77,8 +127,16 @@ body.dark-theme .btn {
 body.dark-theme .btn-link {
   color: var(--black-color);
 }
-/* Dark Theme End */
 
-.btn:hover {
-  opacity: 85%;
+body.dark-theme .nav-bar {
+  background-color: var(--black-color);
 }
+
+body.dark-theme .tech-item {
+  box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+}
+
+body.dark-theme .project-card {
+  box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+}
+/* Dark Theme End */
