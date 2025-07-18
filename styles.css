@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --black-color: #000;
+  --white-color: #fff;
+  --darker-white-color: #f5f5f5;
+  --lighter-black-color: #252525;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+li,
+div {
+  font-family: "Geist", sans-serif;
+}
+
+.dark-theme {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.nav-links {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.nav-links:hover {
+  background-color: var(--darker-white-color);
+}
+
+.btn {
+  border: none;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* Dark Theme */
+body.dark-theme .nav-links {
+  color: var(--white-color);
+}
+
+body.dark-theme .nav-links:hover {
+  background-color: var(--lighter-black-color);
+}
+
+body.dark-theme .btn {
+  background-color: var(--white-color);
+}
+
+body.dark-theme .btn-link {
+  color: var(--black-color);
+}
+/* Dark Theme End */
+
+.btn:hover {
+  opacity: 85%;
+}
