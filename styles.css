@@ -10,6 +10,10 @@
   --lighter-black-color: #252525;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 p,
 h1,
